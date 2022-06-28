@@ -124,6 +124,9 @@
     self.photoListLimitCellTextColor = [UIColor hx_colorWithHexStr:@"#999999"];
     self.photoListLimitCellTextDarkColor = [UIColor hx_colorWithHexStr:@"#ffffff"];
     self.photoListLimitCellTextFont = [UIFont hx_mediumPingFangOfSize:14];
+    
+    self.replacePhotoPreviewController = NO;
+    self.shouldUsePhotoPreview = nil;
 }
 - (void)setLivePhotoAutoPlay:(BOOL)livePhotoAutoPlay {
     _livePhotoAutoPlay = livePhotoAutoPlay;

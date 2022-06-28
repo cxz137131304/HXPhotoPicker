@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -180,7 +181,7 @@
                                             <rect key="frame" x="316" y="341" width="51" height="31"/>
                                         </switch>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="单选模式(不支持HXPhotoView)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ygg-kK-slL">
-                                            <rect key="frame" x="10" y="397" width="238.5" height="21"/>
+                                            <rect key="frame" x="10" y="397" width="237.5" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -240,7 +241,7 @@
                                             <rect key="frame" x="316" y="556" width="51" height="31"/>
                                         </switch>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="删除临时的照片/视频" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Fg-ZQ-ohc">
-                                            <rect key="frame" x="10" y="602" width="161.5" height="21"/>
+                                            <rect key="frame" x="10" y="602" width="161" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -322,7 +323,7 @@
                                             <rect key="frame" x="316" y="884" width="51" height="31"/>
                                         </switch>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="显示日期section" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7jY-8r-lMx">
-                                            <rect key="frame" x="10" y="930" width="125.5" height="21"/>
+                                            <rect key="frame" x="10" y="930" width="125" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -381,7 +382,7 @@
                                             <rect key="frame" x="316" y="1130" width="51" height="31"/>
                                         </switch>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="headerSection半透明毛玻璃效果(ios9.0)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccl-Ec-4Te">
-                                            <rect key="frame" x="10" y="1176" width="308.5" height="21"/>
+                                            <rect key="frame" x="10" y="1176" width="307.5" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -551,7 +552,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="更多属性请查看HXPhotoConfiguration.h" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tW4-gP-9pz">
-                                            <rect key="frame" x="33.5" y="2131.5" width="308" height="21"/>
+                                            <rect key="frame" x="34" y="2131.5" width="307" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -579,7 +580,7 @@
                                             </segments>
                                         </segmentedControl>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="自定义相机拍照/录制类型" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBF-wT-drO">
-                                            <rect key="frame" x="101" y="1967.5" width="173.5" height="18"/>
+                                            <rect key="frame" x="101" y="1967.5" width="173" height="18"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -599,7 +600,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
                                         <constraint firstItem="tW4-gP-9pz" firstAttribute="centerX" secondItem="Frv-WN-oeB" secondAttribute="centerX" id="01S-ln-dd8"/>
                                         <constraint firstAttribute="trailing" secondItem="sUl-qV-E9M" secondAttribute="trailing" constant="10" id="0bn-hN-oCF"/>
@@ -794,7 +795,7 @@
                                     </constraints>
                                 </view>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstItem="Frv-WN-oeB" firstAttribute="leading" secondItem="4fR-PU-vck" secondAttribute="leading" id="7er-Ux-wM1"/>
                                 <constraint firstAttribute="trailing" secondItem="Frv-WN-oeB" secondAttribute="trailing" id="9cv-Cu-5rS"/>
@@ -803,7 +804,7 @@
                             </constraints>
                         </view>
                     </subviews>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
                         <constraint firstItem="4fR-PU-vck" firstAttribute="top" secondItem="d45-gZ-48D" secondAttribute="top" id="0RL-1b-Zjh"/>
                         <constraint firstItem="4fR-PU-vck" firstAttribute="width" secondItem="d45-gZ-48D" secondAttribute="width" id="5E9-Z2-8Kh"/>
@@ -816,7 +817,7 @@
                     </connections>
                 </scrollView>
             </subviews>
-            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="d45-gZ-48D" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="0AX-5F-0Mt"/>
                 <constraint firstAttribute="bottom" secondItem="d45-gZ-48D" secondAttribute="bottom" id="9YG-gt-xlL"/>
@@ -827,4 +828,9 @@
             <point key="canvasLocation" x="92" y="886.05697151424295"/>
         </view>
     </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

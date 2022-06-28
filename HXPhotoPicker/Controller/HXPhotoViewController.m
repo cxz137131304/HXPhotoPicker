@@ -1385,17 +1385,22 @@ HX_PhotoEditViewControllerDelegate
             }
         }
         if (!self.manager.configuration.singleSelected) {
-            HXPhotoPreviewViewController *previewVC = [[HXPhotoPreviewViewController alloc] init];
-            if (HX_IOS9Earlier) {
-                previewVC.photoViewController = self;
+            if (self.manager.configuration.passPhotoPreview) {
+                [self.manager beforeSelectedListAddPhotoModel:cell.model];
+                [self dismissVC];
+            } else {
+                HXPhotoPreviewViewController *previewVC = [[HXPhotoPreviewViewController alloc] init];
+                if (HX_IOS9Earlier) {
+                    previewVC.photoViewController = self;
+                }
+                NSInteger currentIndex = [self.previewArray indexOfObject:cell.model];
+                previewVC.delegate = self;
+                previewVC.modelArray = self.previewArray;
+                previewVC.manager = self.manager;
+                previewVC.currentModelIndex = currentIndex;
+                self.navigationController.delegate = previewVC;
+                [self.navigationController pushViewController:previewVC animated:YES];
             }
-            NSInteger currentIndex = [self.previewArray indexOfObject:cell.model];
-            previewVC.delegate = self;
-            previewVC.modelArray = self.previewArray;
-            previewVC.manager = self.manager;
-            previewVC.currentModelIndex = currentIndex;
-            self.navigationController.delegate = previewVC;
-            [self.navigationController pushViewController:previewVC animated:YES];
         }else {
             if (!self.manager.configuration.singleJumpEdit) {
                 NSInteger currentIndex = [self.previewArray indexOfObject:cell.model];
