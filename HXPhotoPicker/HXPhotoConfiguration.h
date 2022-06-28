@@ -702,9 +702,4 @@ HXPhotoPreviewViewController;
 /// 旋转屏幕时也会调用
 @property (copy, nonatomic) void (^previewCollectionView)(UICollectionView *collectionView);
 
-#pragma mark - < 自定义预览界面 >
-/// 跳过预览界面，默认为NO
-/// 需要singleSelected = YES
-@property (nonatomic, assign) BOOL passPhotoPreview;
-
 @end
