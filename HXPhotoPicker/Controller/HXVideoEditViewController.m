@@ -402,20 +402,28 @@ HXVideoEditBottomViewDelegate
 }
 - (void)editVideoCompletion {
     if (!self.outside) {
-        if ([self.delegate respondsToSelector:@selector(videoEditViewControllerDidDoneClick:beforeModel:afterModel:)]) {
-            [self.delegate videoEditViewControllerDidDoneClick:self beforeModel:self.model afterModel:self.afterModel];
-        }
-        if (self.doneBlock) {
-            self.doneBlock(self.model, self.afterModel, self);
-        }
-        [self dismissViewControllerCompletion:nil];
-    }else {
-        [self dismissViewControllerCompletion:^{
+        if (self.manager.configuration.useCustomPreview) {
+            self.manager.configuration.useCustomPreview(self, self.afterModel);
+        } else {
             if ([self.delegate respondsToSelector:@selector(videoEditViewControllerDidDoneClick:beforeModel:afterModel:)]) {
                 [self.delegate videoEditViewControllerDidDoneClick:self beforeModel:self.model afterModel:self.afterModel];
             }
             if (self.doneBlock) {
                 self.doneBlock(self.model, self.afterModel, self);
+            }
+        }
+        [self dismissViewControllerCompletion:nil];
+    }else {
+        [self dismissViewControllerCompletion:^{
+            if (self.manager.configuration.useCustomPreview) {
+                self.manager.configuration.useCustomPreview(self, self.afterModel);
+            } else {
+                if ([self.delegate respondsToSelector:@selector(videoEditViewControllerDidDoneClick:beforeModel:afterModel:)]) {
+                    [self.delegate videoEditViewControllerDidDoneClick:self beforeModel:self.model afterModel:self.afterModel];
+                }
+                if (self.doneBlock) {
+                    self.doneBlock(self.model, self.afterModel, self);
+                }
             }
         }];
     }

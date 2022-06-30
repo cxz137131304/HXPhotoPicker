@@ -705,7 +705,10 @@ HXPhotoPreviewViewController;
 #pragma mark - < 自定义预览界面 >
 /// 跳过预览界面，默认为NO
 /// 需要singleSelected = YES
-@property (nonatomic, assign) BOOL passPhotoPreview;
+@property (assign, nonatomic) BOOL passPhotoPreview;
+
+/// 使用自定义预览界面
+@property (copy, nonatomic) void (^useCustomPreview)(UIViewController *viewController, HXPhotoModel *model);
 
 
 @end
